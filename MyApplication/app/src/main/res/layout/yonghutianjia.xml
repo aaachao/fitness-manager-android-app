@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".example.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center"
+            android:id="@+id/addphoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_edit_avatar_camera"/>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:text="用户帐号"
+                android:textColor="#100D0D"
+                android:textSize="30sp"
+                />
+
+            <EditText
+                android:id="@+id/yonghuzhanghao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:hint="请输入用户账号"
+                android:textAlignment="center"
+                android:textColor="#CAB4B4"
+                android:textSize="24sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:text="用户密码"
+                android:textColor="#100D0D"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/yonghumima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:textAlignment="center"
+                android:hint="请输入用户密码"
+                android:ems="5"
+                android:textSize="24sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:text="用户姓名"
+                android:textColor="#100D0D"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/yonghuxingming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:textAlignment="center"
+                android:hint="请输入用户姓名"
+                android:ems="5"
+                android:textSize="24sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:text="用户电话"
+                android:textColor="#100D0D"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/yonghudianhua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:textAlignment="center"
+                android:hint="请输入用户电话"
+                android:ems="5"
+                android:textSize="24sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:text="用户体重"
+                android:textColor="#100D0D"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:textAlignment="center"
+                android:hint="请输入用户体重"
+                android:ems="5"
+                android:textSize="24sp"
+                />
+        </LinearLayout>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/xintixiaowanzi"
+            android:layout_gravity="center"
+        android:text="用户类型"
+        android:textColor="#100D0D"
+        android:textSize="30sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/yonghuleixing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:checked="true"
+                    android:text="admin"
+                    android:textColor="#100D0D"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/xintixiaowanzi"/>
+
+                <RadioButton
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="user"
+                android:textColor="#100D0D"
+                android:textSize="30sp"
+                android:fontFamily="@font/xintixiaowanzi"/>
+                <RadioButton
+                    android:id="@+id/teacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="teacher"
+                    android:textColor="#100D0D"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/xintixiaowanzi"/>
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <Button
+            android:id="@+id/querentianjia"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tuoyuan"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:fontFamily="@font/simkai"
+            android:text="确认添加"
+            android:textColor="#F32163"
+            android:textSize="30sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+

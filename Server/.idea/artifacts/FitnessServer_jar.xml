@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="FitnessServer:jar">
+    <output-path>$PROJECT_DIR$/../../..</output-path>
+    <root id="root">
+      <element id="archive" name="FitnessServer.jar">
+        <element id="module-output" name="FitnessServer" />
+      </element>
+      <element id="file-copy" path="F:/apache-tomcat-9.0.19-windows-x64/apache-tomcat-9.0.19/lib/mysql-connector-java-5.1.12-bin.jar" />
+      <element id="library" level="project" name="servlet-api" />
+      <element id="library" level="project" name="lib" />
+    </root>
+  </artifact>
+</component>

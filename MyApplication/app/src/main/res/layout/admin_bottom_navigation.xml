@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+
+    android:gravity="center"
+    android:orientation="horizontal">
+    <!--train-->
+    <LinearLayout
+        android:id="@+id/bottom_train"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bottom_ico_train"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+             />
+
+        <TextView
+            android:id="@+id/bottom_txt_train"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户管理"
+
+            android:textSize="12sp" />
+    </LinearLayout>
+    <!--train-->
+    <!--found-->
+    <LinearLayout
+        android:id="@+id/bottom_found"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bottom_ico_found"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+             />
+
+        <TextView
+            android:id="@+id/bottom_txt_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="课程管理"
+
+            android:textSize="12sp" />
+    </LinearLayout>
+    <!--found-->
+    <!--me-->
+    <LinearLayout
+        android:id="@+id/bottom_me"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bottom_ico_me"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+             />
+
+        <TextView
+            android:id="@+id/bottom_txt_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="管理员"
+
+            android:textSize="12sp" />
+    </LinearLayout>
+    <!--me-->
+
+
+</LinearLayout>

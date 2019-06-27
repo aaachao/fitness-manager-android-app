@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/a"
+        android:label="fitness"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".example.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".example.activity_register"/>
+        <activity android:name=".example.admin.activity_admin_main"/>
+        <activity android:name=".example.admin.yonghuguanli"/>
+        <activity android:name=".example.admin.kechengguanli"/>
+        <activity android:name=".example.admin.kechengtianjia"/>
+        <activity android:name=".example.admin.kechengxiugai"/>
+        <activity android:name=".example.admin.kechengshanchu"/>
+        <activity android:name=".example.admin.yonghutianjia"/>
+        <activity android:name=".example.admin.yonghuxiugai"/>
+        <activity android:name=".example.admin.yonghushanchu"/>
+        <activity android:name=".example.user.user_admin"/>
+        <activity android:name=".example.user.myziliao"/>
+        <activity android:name=".example.acttofrag.yonghugerenkecheng"/>
+        <activity android:name=".example.acttofrag.yonghugerenkechengtianjia"/>
+        <activity android:name=".example.acttofrag.kechengdeyonghu"/>
+        <activity android:name=".example.acttofrag.kechengdeyonghutianjia"/>
+        <activity android:name=".example.teacher.teacher_admin"/>
+        <activity android:name=".example.teacher.mykecheng"/>
+        <activity android:name=".example.teacher.mykecheng2"/>
+        <activity android:name=".example.acttofrag.xiangmudejiaolian"/>
+        <activity android:name=".example.acttofrag.xunlian"/>
+        <activity android:name=".example.user.jishi"/>
+        <activity android:name=".example.acttofrag.kechengdexueyuan"/>
+        <activity android:name=".example.acttofrag.xunlianjilu"/>
+        <activity android:name=".example.acttofrag.xueyuanyundongjilu"/>
+        <activity android:name=".example.kechengbiao.kechengbiao"/>
+        <activity android:name=".example.user.NewsDetailActivity"/>
+        <activity android:name=".example.user.ReleaseNewsActivity"/>
+        <activity android:name=".example.user.BeforeDateCheckActivity"/>
+        <activity android:name=".example.user.DateCheckActivity"/>
+        <activity android:name=".example.admin.fabutongzhi"/>
+        <activity android:name=".example.admin.jingyanguanli"/>
+        <activity android:name=".example.user.NewsDetailActivity_withright"/>
+        <activity android:name=".example.teacher.sikeguanli"/>
+        <activity android:name=".example.teacher.siketianjia"/>
+        <activity android:name=".example.teacher.sikexiugai"/>
+        <activity android:name=".example.teacher.sikeshanchu"/>
+        <activity android:name=".example.acttofrag.sijiaosijiao"/>
+        <activity android:name=".example.acttofrag.jiaoliandesike"/>
+        <activity android:name=".example.admin.sijiaoguanli"/>
+        <activity android:name=".example.acttofrag.jiaoliandesike2"/>
+    </application>
+
+</manifest>

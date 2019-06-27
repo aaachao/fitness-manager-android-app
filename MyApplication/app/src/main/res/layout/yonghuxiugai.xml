@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".example.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center"
+            android:id="@+id/addphoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_edit_avatar_camera"/>
+    </ScrollView>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/xintixiaowanzi"
+        android:text="用户账号"
+        android:textColor="#100D0D"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:id="@+id/xuyaoxiugaideyonghuzhanghao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/xintixiaowanzi"
+        android:hint="要修改de用户帐号"
+        android:textAlignment="center"
+        android:textColor="#CAB4B4"
+        android:textSize="24sp"
+        android:visibility="visible" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <Button
+            android:id="@+id/chaxun"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tuoyuan"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:fontFamily="@font/simkai"
+            android:text="查询"
+            android:textColor="#F32163"
+            android:textSize="30sp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:text="用户账号"
+                android:textColor="#100D0D"
+                android:textSize="30sp"
+                />
+
+            <EditText
+                android:id="@+id/xinyognhuzhanghao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:editable="false"
+                android:hint="用户账号不可变更"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:text="用户密码"
+                android:textColor="#100D0D"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/xinyonghumima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:textAlignment="center"
+                android:hint="请输入新用户密码"
+                android:ems="5"
+                android:textSize="24sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:text="用户类型"
+                android:textColor="#100D0D"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/xinyonghuleixing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:editable="false"
+                android:textAlignment="center"
+                android:hint="用户类型不可变更"
+                android:ems="5"
+                android:textSize="24sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:text="用户体重"
+                android:textColor="#100D0D"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:textAlignment="center"
+                android:hint="请输入新用户体重"
+                android:ems="5"
+                android:textSize="24sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/xintixiaowanzi"
+            android:text="用户姓名"
+            android:textColor="#100D0D"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/xinyonghuxingming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/xintixiaowanzi"
+            android:textAlignment="center"
+            android:hint="请输入新用户姓名"
+            android:ems="5"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/xintixiaowanzi"
+            android:text="用户电话"
+            android:textColor="#100D0D"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/xinyonghudianhua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/xintixiaowanzi"
+            android:textAlignment="center"
+            android:hint="请输入新用户电话"
+            android:ems="5"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <Button
+            android:id="@+id/querenxiugai"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tuoyuan"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:fontFamily="@font/simkai"
+            android:text="确认修改"
+            android:textColor="#F32163"
+            android:textSize="30sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+

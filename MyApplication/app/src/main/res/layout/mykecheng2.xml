@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".example.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ranshaonidekaluli"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:text="课程名称"
+                android:textColor="#100D0D"
+                android:textSize="30sp"
+                />
+
+            <EditText
+                android:id="@+id/kechengmingcheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:hint="请输入课程名称"
+                android:textAlignment="center"
+                android:textColor="#CAB4B4"
+                android:textSize="24sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:text="课程内容"
+                android:textColor="#100D0D"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/kechengneirong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xintixiaowanzi"
+                android:textAlignment="center"
+                android:hint="请输入课程内容"
+                android:ems="5"
+                android:textSize="24sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <Button
+            android:id="@+id/querentianjia"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tuoyuan"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:fontFamily="@font/simkai"
+            android:text="确认添加"
+            android:textColor="#F32163"
+            android:textSize="30sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
